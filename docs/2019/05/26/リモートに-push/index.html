@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja-jp">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Hugo 0.55.6" />
+
+
+<title>リモートに push - A Hugo website</title>
+<meta property="og:title" content="リモートに push - A Hugo website">
+
+
+  <link href='../../../../favicon.ico' rel='icon' type='image/x-icon'/>
+
+
+
+  
+
+
+
+
+
+
+
+<link rel="stylesheet" href="../../../../css/fonts.css" media="all">
+<link rel="stylesheet" href="../../../../css/main.css" media="all">
+
+
+
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <nav class="nav">
+  <a href="../../../../" class="nav-logo">
+    <img src="../../../../images/logo.png"
+         width="50"
+         height="50"
+         alt="Logo">
+  </a>
+
+  <ul class="nav-links">
+    
+    <li><a href="../../../../about/">About</a></li>
+    
+    <li><a href="https://github.com/rstudio/blogdown">GitHub</a></li>
+    
+    <li><a href="https://twitter.com/rstudio">Twitter</a></li>
+    
+  </ul>
+</nav>
+
+      </header>
+
+
+<main class="content" role="main">
+
+  <article class="article">
+    
+    <span class="article-duration">1 min read</span>
+    
+
+    <h1 class="article-title">リモートに push</h1>
+
+    
+    <span class="article-date">2019-05-26</span>
+    
+
+    <div class="article-content">
+      
+
+<h1 id="リモートにpush">リモートにpush</h1>
+
+<p><a href="https://qiita.com/sayama0402/items/9afbb519d97327b9f05c">ローカルリポジトリをリモートにpushするまで</a>の手順は次の通りです。</p>
+
+<ol>
+<li><p>cdコマンドを使って、該当のディレクトリまで移動<br />
+// 今回はworkspace/hogeを例に<br />
+$ cd workspace/hoge</p></li>
+
+<li><p>gitを初期化<br />
+$ git init</p></li>
+
+<li><p>ステージングにあげる<br />
+$ git add . または $git add -A</p></li>
+
+<li><p>最初のコミットメッセージを書く<br />
+$ git commit -m &ldquo;first commit&rdquo;</p></li>
+
+<li><p>リモートにアクセス<br />
+$ git remote add origin ここにgithubで作ったリポジトリのURL<br />
+// 例<br />
+$ git remote add origin <a href="https://github.com/hoge/hoge.git">https://github.com/hoge/hoge.git</a></p></li>
+
+<li><p>masterへpush
+$ git push origin master</p></li>
+</ol>
+
+    </div>
+  </article>
+
+  
+
+
+</main>
+
+      <footer class="footer">
+        <ul class="footer-links">
+          <li>
+            <a href="../../../../index.xml" type="application/rss+xml" target="_blank">RSS feed</a>
+          </li>
+          <li>
+            <a href="https://gohugo.io/" class="footer-links-kudos">Made with <img src="../../../../images/hugo-logo.png" alt="Img link to Hugo website" width="22" height="22"></a>
+          </li>
+        </ul>
+      </footer>
+
+    </div>
+    
+
+    
+<script src="../../../../js/math-code.js"></script>
+<script async src="//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+
+    
+  </body>
+</html>
+
